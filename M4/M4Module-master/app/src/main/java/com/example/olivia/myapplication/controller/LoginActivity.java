@@ -43,7 +43,6 @@ public class LoginActivity extends AppCompatActivity {
         _signOn = (Button) findViewById(R.id.sign_in_button);
         _cancel = (Button) findViewById(R.id.login_cancel_button);
 
-
         _signOn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

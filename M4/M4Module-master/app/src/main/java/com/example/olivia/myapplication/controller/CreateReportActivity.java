@@ -74,6 +74,7 @@ public class CreateReportActivity extends AppCompatActivity {
         final EditText etVirusPPM = (EditText) findViewById(R.id.etVirusPPM);
         final EditText etContaminatePPM = (EditText) findViewById(R.id.etContaminatePPM);
         final Button registerButton = (Button) findViewById(R.id.createButton);
+        final Button existedLocation = (Button) findViewById(R.id._existedPurity);
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -161,5 +162,15 @@ public class CreateReportActivity extends AppCompatActivity {
                 finish();
             }
         });
+        existedLocation.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(CreateReportActivity.this, ExistedLocationActivity.class);
+                        intent.putExtra("user", user);
+                        startActivity(intent);
+                finish();
+            }
+        });
+
     }
 }

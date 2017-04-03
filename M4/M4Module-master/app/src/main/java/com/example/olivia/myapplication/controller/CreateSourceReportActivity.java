@@ -18,10 +18,6 @@ import com.example.olivia.myapplication.model.waterType;
 import com.google.android.gms.maps.model.LatLng;
 import com.kosalgeek.asynctask.AsyncResponse;
 import com.kosalgeek.asynctask.PostResponseAsyncTask;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 import java.util.HashMap;
 
 /**
